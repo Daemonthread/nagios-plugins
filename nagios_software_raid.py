@@ -18,7 +18,7 @@
 #
 """
 Nagios plugin to check the status of software raid arrays 
-on a remote ubuntu 12.04server.
+on a remote ubuntu 12.04 server.
 Required packages:
 Python:
  - argparse
@@ -44,7 +44,7 @@ class NagiosSoftwareRaid():
             print "Error: No username given."
             sys.exit(3)
         if args.password is None and args.keyfile is None:
-            print "Error: please provide either a password or a ssh key."
+            print "Error: please provide either a password or an ssh key."
             sys.exit(3)
         if args.password is None:
             self.password   = ""
